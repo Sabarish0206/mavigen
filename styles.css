@@ -5,11 +5,13 @@
     box-sizing: border-box;
 }
 
-body {
+html,body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .mavigen-navbar {
@@ -53,8 +55,13 @@ body {
     color: #F0C988;
 }
 
-.navbarlinkcontainer .nav-link {
+.navbarlinkcontainer a {
     margin-right: 35px;
+    color: #F0C988;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 15px;
 }
 
 .navbarlinkcontainer a:hover {
@@ -100,11 +107,15 @@ body {
     padding: 10px 50px;
     font-size: 1.2rem;
     border-radius: 20px;
+    border: 3px solid #F0C988;
+    color: #F0C988;
+    font-weight: bold;
 }
 
 .hero-text .btn:hover {
     background-color: #F0C988;
     border: #F0C988;
+    color: #2F6D6A;
 }
 
 @media (max-width: 768px) {
@@ -140,38 +151,35 @@ body {
 }
 
 @media (max-width: 480px) {
-
     .hero-section {
-        position: relative;
-        text-align: center;
-        height: 60vh; 
-        overflow: hidden;
+        height: 70vh; /* Increase height on small screens */
     }
 
-    .hero-text{
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* Center the text */
-        color: white; /* Text color */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    .hero-text {
+        top: 50%; /* Move text even lower */
+        padding: 5px;
+        transform: translate(-50%, -50%);
     }
 
     .hero-text h1 {
-        font-size: 1.5rem; /* Decrease font size further on mobile phones */
+        font-size: 1.3rem;
+        margin-bottom: 8px;
     }
 
     .hero-text p {
-        font-size: 1rem;
-        margin-bottom: 5px;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
     }
 
     .hero-text .btn {
         font-size: 0.9rem;
         padding: 6px 12px;
-        margin: 0px;
     }
 
+    .hero-section .bg-image{
+        height: 100%;
+        padding: 0px;
+    }
 }
 
 /* about section */
@@ -255,20 +263,28 @@ body {
     justify-content: center;
     padding: 60px 20px;
     background-color: #2F6D6A;
+    width: 100%;
+    margin: 0;
+}
+
+.mission{
+    padding-left: 60px;
+}
+
+.vision{
+    padding-top: 0px;
 }
 
 
 .mission h2, .vision h2 {
     font-size: 2rem;
     font-weight: bold;
-    /* color: #333; */
     margin-bottom: 20px;
 }
 
 .mission p, .vision p {
     font-size: 1.2rem;
     line-height: 1.8;
-    /* color: #555; */
     margin-bottom: 20px;
 }
 
@@ -281,6 +297,29 @@ body {
     .mission, .vision {
         width: 45%;
         text-align: left;
+    }
+}
+
+@media (max-width:768px) {
+    .mission, .vision {
+        padding-left: 60px;
+    }
+}
+
+@media (max-width:460px) {
+    .mission, .vision {
+       padding: 0px;
+    }
+}
+
+@media (max-width:360px) {
+    .mission{
+        padding: 0;
+    }
+    .vision{
+        padding: 30px 0;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -305,25 +344,36 @@ body {
 
 /* contact us */
 
-.contactus {
+.contactusSection{
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    padding: 60px 100px;
-    align-items: center;
 }
+
+.contactus {
+    display: flex;
+    }
+
+.contactus-container{
+        margin-top: 20px;
+        padding: 0px;
+        text-align: center;
+    }
 
 .contactus-container p, .contactus-container a{
     font-size: 1.2rem;
     line-height: 1.8;
     text-decoration: none;
-    /* color: #555; */
+    text-align: center;
+    padding-left: 30px;
 }
 
 .contactus-title{
     padding-bottom: 20px;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.contactemail{
+    padding-left: 80px;
 }
 
 .contacts-container{
@@ -349,7 +399,6 @@ body {
 
 .contact-item .icon {
   margin-right: 0px;
-  color: #000;
 }
 
 .contact-item .name {
@@ -379,9 +428,32 @@ body {
         text-align: center;
         margin-top: 0;
     }
+
+    .contactus-container{
+        padding: 100px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactus-container {
+        margin-top: 5px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactus-container {
+        margin-top: 5px;
+        padding: 0px;
+    }
 }
 
 /* footer */
+
+.footer{
+    background-color: #2F6D6A;
+}
 
 .footercontainer i{
     padding: 30px;
@@ -389,6 +461,15 @@ body {
 }
 
 .footercontainer i:hover{
-    color: #2F6D6A;
+    color: #F0C988;
     border: #2F6D6A;
+}
+
+.footer p{
+    padding-bottom: 30px;
+}
+
+.footercontainer a{
+    text-decoration: none;
+    color: black;
 }

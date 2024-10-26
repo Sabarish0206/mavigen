@@ -15,6 +15,7 @@
     
     </head>
 <body> 
+
     <div class="mavigen-navbar">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -28,9 +29,9 @@
               </button>
               <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav navbarlinkcontainer">
-                  <a class="nav-link active" href="#about">ABOUT US</a>
-                  <a class="nav-link active" href="#company">COMPANY</a>
-                  <a class="nav-link active" href="#contactus">CONTACT</a>
+                  <a class="active" href="#about">ABOUT US</a>
+                  <a class="active" href="#company">COMPANY</a>
+                  <a class="active" href="#contactus">CONTACT</a>
                 </div>
               </div>
             </div>
@@ -42,7 +43,7 @@
         <div class="hero-text">
             <h1>Advancing Oncology Research for Better Outcomes</h1>
             <p>Committed to Safety and Efficacy in Clinical Trials.</p>
-            <button type="button" class="btn btn-light" onclick="document.getElementById('contactus').scrollIntoView({ behavior: 'smooth' });">Contact</button>        
+            <button type="button" class="btn" onclick="document.getElementById('contactus').scrollIntoView({ behavior: 'smooth' });">Contact</button>        
         </div>
     </div>
 
@@ -58,14 +59,14 @@
         </div>
     </section>
 
-    <section class="missionvision container-fluid" id="missionvision">
-        <div class="mission container">
+    <section class="missionvision" id="missionvision">
+        <div class="mission">
             <h2>Mission</h2>
             <p>
                 To be a global leader in clinical research for oncology, driving breakthroughs in cancer treatment that improve patient outcomes and contribute to a healthier future for all.
             </p>
         </div>
-        <div class="vision container">
+        <div class="vision">
             <h2>Vision</h2>
             <p>
                 To advance the development of safe and effective oncology drugs through rigorous clinical research, ensuring the highest standards of safety and compliance. We aim to collaborate closely with global regulatory bodies like the FDA, MHRA, and CDSCO to bring innovative treatments to patients worldwide.
@@ -82,14 +83,16 @@
           </div>
     </section>
 
-    <section class="contactus" id="contactus">
-    
-        <div class="contactus-container container">
-            <h2 class="contactus-title text-left">CONTACT US</h2>
-            <p class="contactus-paragraph">Get in touch to learn more about our clinical research services and how we can assist you in oncology drug evaluation.</p>
-            <a href="mailto:mavigenlifescience@gmail.com">mavigenlifescience@gmail.com</a>
-        </div>
+    <section class="contactusSection"  id="contactus">
 
+        <h2 class="contactus-title text-center">CONTACT US</h2>
+
+        <div class="contactus">
+            <div class="contactus-container container">
+                <p class="contactus-paragraph text-left">Get in touch to learn more about our clinical research services and how we can assist you in oncology drug evaluation.</p>
+                <a class="contactemail" href="mailto:mavigenlifescience@gmail.com">mavigenlifescience@gmail.com</a>
+            </div>
+    
         <div class="container contacts-container">
             <div class="contact-list">
                 <div class="contact-item">
@@ -109,14 +112,16 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <section class="footer">
         <div class="footercontainer container-fluid text-center ">
-            <i class="fa-brands fa-instagram soc-med"></i>
+            <a href="https://www.instagram.com/_mavigen_?igsh=MTFjZWZuaWEydHo5eA=="><i class="fa-brands fa-instagram soc-med"></i></a>
             <i class="fa-brands fa-facebook soc-med"></i>
             <i class="fa-brands fa-twitter soc-med"></i>
-            <i class="fa-solid fa-envelope soc-med"></i> 
+            <a href="mailto:mavigenlifescience@gmail.com"><i class="fa-solid fa-envelope soc-med"></i> </a>
+            
           </div>
           <p class="text-center">© 2024. All rights reserved.</p>
     </section>
