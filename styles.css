@@ -276,29 +276,6 @@ p {
     object-fit: cover;
 }
 
-.subAboutcontainer {
-    display: flex; /* Flexbox for side-by-side layout */
-    gap: 20px; /* Space between the sections */
-    padding: 20px; /* Optional padding around the container */
-  }
-  
-  .subAboutSection {
-    flex: 1; /* Equal width for both sections */
-    border: 2px solid #ccc; /* Border around each section */
-    border-radius: 8px; /* Rounded corners (optional) */
-    padding: 20px; /* Inner spacing */
-    background-color: #f9f9f9; /* Light background for better contrast */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better appearance */
-  }
-  
-  .section h2 {
-    margin-top: 0; /* Remove default margin on top */
-  }
-  
-  .section p {
-    margin-bottom: 0; /* Remove bottom margin for cleaner layout */
-  }
-
 @media (max-width: 768px) {
 
     .about-section {
@@ -330,13 +307,10 @@ p {
         padding-top: 54px;
         padding-left: 10px;
     }
-
     .about-content {
         flex: 1;
         margin-right: 0px;
         text-align: left;
-        margin-top: 1%;
-        justify-content: center;
     }
     .about-image img {
         margin: 20px 0px;
