@@ -91,7 +91,7 @@ p {
 .hero-section {
     position: relative;
     text-align: center;
-    height: 87vh; 
+    height: 100%; 
     overflow: hidden;
 }
 
@@ -165,30 +165,38 @@ p {
         font-size: 1.6rem;
         margin-bottom: 20px;
     }
+
+    .hero-section .bg-image{
+        height: 100%;
+        padding: 0px;
+    }
 }
 
 @media (max-width: 768px) {
 
     .hero-section {
-        height: 50vh; 
+        height: 90vh; 
     }
 
+
     .hero-text{
-        top: 50%;
+        width: 70%;
+        top: 45%;
         padding: 5px;
         transform: translate(-50%, -50%);
     }
     .hero-text h1 {
-        font-size: 1.8rem; /* Decrease font size on tablets and small laptops */
+        font-size: 2rem; /* Decrease font size on tablets and small laptops */
     }
 
     .hero-text p {
+        padding-top: 10px;
         font-size: 1.1rem;
     }
 
     .hero-text .btn {
         font-size: 1rem;
-        padding: 8px 16px;
+        padding: 10px 30px;
     }
 
     .hero-section .bg-image{
@@ -201,9 +209,14 @@ p {
 @media (max-width: 547px) {
     .hero-section {
         height: 85vh; /* Increase height on small screens */
+        position: relative;
+        text-align: center;
+        overflow: hidden;
     }
 
     .hero-text {
+        width: 95%;
+        position: absolute;
         top: 50%; /* Move text even lower */
         padding: 5px;
         transform: translate(-50%, -50%);
@@ -221,7 +234,7 @@ p {
 
     .hero-text .btn {
         font-size: 0.9rem;
-        padding: 6px 12px;
+        padding: 10px 30px;
     }
 
     .hero-section .bg-image{
@@ -365,18 +378,26 @@ p {
 @media (min-width: 768px) {
     .missionvision {
         flex-direction: row;
-        justify-content: space-between;
+        padding-left: 15px;
     }
 
     .mission, .vision {
         width: 45%;
         text-align: left;
     }
+
+    .mission{
+        padding-left: 0px;
+    }
+
+    .vision{
+        padding-left: 10px;
+    }
 }
 
 @media (max-width:768px) {
     .mission, .vision {
-        padding-left: 60px;
+        padding-left: 10px;
     }
 }
 
